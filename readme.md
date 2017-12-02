@@ -1,0 +1,2 @@
+Welcome to JAR-N.
+A mock interview alexa voice skill that allows users to specify what position, and what company they want to be interviewing for as well the type of question (e.g., Technical, Brainteaser, experience).
