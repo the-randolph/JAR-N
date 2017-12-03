@@ -1,8 +1,4 @@
-InterviewIntent interview me
-InterviewIntent give me an interview
 InterviewIntent interview for {position} positions
-InterviewIntent interview at {company}
-InterviewIntent {type} type interview questions
 InterviewIntent interview for {position} jobs
-InterviewIntent mock interview
-InterviewIntent practice interview
+InterviewIntent interview for {position} positions at {company}
+InterviewIntent {position} for {company}
