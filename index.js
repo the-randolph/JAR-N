@@ -41,7 +41,7 @@ exports.handler = (event, context, callback) => {
                     ).listen(HELP_MESSAGE);     
     }
     
-    if (event.request.intent.slots.position.value === "software engineering") {
+    if (event.request.intent.slots.positions.value === "software engineering") {
         console.log("Checked positions")
                 context.succeed(
                 generateResponse(
@@ -86,9 +86,9 @@ exports.handler = (event, context, callback) => {
                         buildSpeechletResponse("", true),
                         {}
                         )
-                    ).listen(ERROR_MESSAGE);
+                    ).listen(ERROR_MESSAGE);  
     }
-
+    
     switch (event.request.type) {
         case "LaunchRequest":
             //Launch Request
@@ -106,7 +106,7 @@ exports.handler = (event, context, callback) => {
                         )
                     ).listen(HELP_MESSAGE);
             break;
-
+        
         case "IntentRequest":
             // Intent Request
             console.log("Intent Request")
@@ -151,6 +151,8 @@ function buildSpeechletResponse(output, shouldEndSession) {
     shouldEndSession: shouldEndSession,
     
     }
+    
+    
 }
 
 function generateResponse(speechletResponse, sessionAttributes) {

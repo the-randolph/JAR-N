@@ -1,0 +1,26 @@
+{
+  "intents": [
+    {
+      "intent": "AMAZON.CancelIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "position",
+          "type": "job_position"
+        },
+        {
+          "name": "company",
+          "type": "companies"
+        }
+      ],
+      "intent": "InterviewIntent"
+    }
+  ]
+}
